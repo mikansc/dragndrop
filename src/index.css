@@ -25,6 +25,12 @@ body {
   display: flex;
   align-items: flex-end;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.mt-1 {
+  margin-top: 1em;
+}
+
+.mb-1 {
   margin-bottom: 1em;
 }
 
@@ -32,7 +38,6 @@ body {
   display: flex;
   flex-direction: column;
   margin-right: 1.25em;
-  padding: 1em 0;
 }
 .form-group .input-group label {
   font-size: 0.75rem;
@@ -78,4 +83,19 @@ body {
 .drag-area .list-item:active {
   border: 1px solid rgb(47, 108, 221);
   background-color: rgba(47, 108, 221, 0.15);
+}
+
+.btn {
+  font-size: 1.25rem;
+  padding: 0.5em;
+  margin: 0;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+.btn-primary {
+  background-color: rgb(47, 108, 221);
+  color: #fff;
 }

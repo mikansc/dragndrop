@@ -48,13 +48,21 @@ function App() {
 
   return (
     <div className="content">
+      <h1>Drag and Drop</h1>
+      <p>Adicione nomes à lista e arraste-os para reordenar</p>
       <div className="form-group">
-        <div className="input-group">
+        <div className="input-group mb-1 mt-">
           <label htmlFor="nome">Nome</label>
-          <input type="text" name="nome" id="nome" value={formulario.nome} onChange={(e) => handleMudarTexto(e)} />
+          <input
+            type="text"
+            name="nome"
+            id="nome"
+            value={formulario.nome}
+            onChange={(e) => handleMudarTexto(e)}
+          />
         </div>
 
-        <div className="input-group">
+        <div className="input-group mb-1">
           <label htmlFor="sobrenome">Sobrenome</label>
           <input
             autoComplete="off"
@@ -65,7 +73,11 @@ function App() {
             onChange={(e) => handleMudarTexto(e)}
           />
         </div>
-        <button onClick={handleSubmit}>Mostrar</button>
+        <div className="mb-1">
+          <button className="btn btn-primary" onClick={handleSubmit}>
+            Adicionar
+          </button>
+        </div>
       </div>
 
       <div className="drag-area">
